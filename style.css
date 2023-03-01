@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.card{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+ 
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.box1{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);
+}
+.box3
+{
+    background-color: hsl(179, 100%, 13%);
+
+}
+.box{
+    padding: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.box h3{
+    font-family: "Big Shoulders Display",cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 20px 0 20px 0;
+}
+.box p{
+    font-family: "Lexend Deca",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5em;
+
+}
+.box a{
+    text-decoration: none;
+    padding:13px 27px ;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 60px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+
+    transition: all .4s ease-in-out;
+}
+.box1 a{
+    color:hsl(31, 77%, 52%) ;
+}
+.box2 a{
+    color: hsl(184, 100%, 22%);
+}
+.box3 a{
+    color: hsl(179, 100%, 13%);
+}
+
+.box a:hover{
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+
+.attribution {
+     font-size: 11px;
+     text-align: center; 
+     position: absolute;
+     bottom: 0;
+    
+    }
+
+.attribution a {
+    color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:768px) {
+    .card{
+        grid-template-columns: 1fr;
+
+    }
+    .attribution {
+        display: none;
+       }
+}
+
+@media only screen and (max-width:420px) {
+    .card{
+        margin: 2rem .5rem;
+        /* grid-template-columns: 1fr; */
+    }
+    
+    .attribution {
+        display: none;
+       }
+}
